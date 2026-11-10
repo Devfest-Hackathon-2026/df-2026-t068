@@ -1,0 +1,50 @@
+{
+  "version": "single-value-6-semantic",
+  "factors": [
+    {
+      "id": "target",
+      "name": "ターゲット",
+      "description": "誰を対象とするか。中心となる対象を一つの短い語句で表す"
+    },
+    {
+      "id": "problem",
+      "name": "課題",
+      "description": "現在何に困っているか。解消したい状態"
+    },
+    {
+      "id": "cause",
+      "name": "原因",
+      "description": "なぜその課題が生じるか。本質的な背景や構造"
+    },
+    {
+      "id": "purpose",
+      "name": "目的",
+      "description": "どのような状態を実現したいか"
+    },
+    {
+      "id": "mechanism",
+      "name": "解決原理",
+      "description": "どのような仕組みで課題を解消するか。単なる技術名や機能一覧ではなく働きの原理"
+    },
+    {
+      "id": "context",
+      "name": "利用場面",
+      "description": "いつ、どのような状況で利用するか"
+    }
+  ],
+  "maxValuesPerIdea": 6,
+  "maxIdeas": 5,
+  "maxTextLength": 6000,
+  "maxLabelLength": 30,
+  "preferredLabelLength": 12,
+  "maxCandidates": 8,
+  "maxLabels": 20,
+  "similarityThreshold": 0.82,
+  "abstractionThreshold": 0.86,
+  "semanticCandidateThreshold": 0.6,
+  "maxSemanticPairs": 20,
+  "minimumLabelSimilarity": 0.5,
+  "minimumLabelMemberSimilarity": 0.5,
+  "factorThresholds": {},
+  "embeddingMode": "label"
+}

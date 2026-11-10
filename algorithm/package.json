@@ -1,0 +1,27 @@
+{
+  "name": "ideaweave-algorithm",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "demo": "node src/cli.ts --mock examples/ideas.json",
+    "analyze": "node --env-file=.env src/cli.ts examples/ideas.json",
+    "try": "node --env-file=.env src/interactive.ts",
+    "try:mock": "node src/interactive.ts --mock",
+    "replay": "node src/replay-cli.ts",
+    "calibrate": "node src/calibrate-cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@google/genai": "^2.32.0"
+  }
+}
